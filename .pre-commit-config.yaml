@@ -1,0 +1,22 @@
+repos:
+    - repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v4.4.0
+      hooks:
+          - id: check-merge-conflict
+          - id: end-of-file-fixer
+    - repo: local
+      hooks:
+          - id: black
+            name: Black
+            entry: poetry run black .
+            language: system
+            types: [python]
+    - repo: https://github.com/PyCQA/flake8
+      rev: 6.0.0
+      hooks:
+          - id: flake8
+            name: Flake8
+    - repo: https://github.com/PyCQA/isort
+      rev: 5.11.4
+      hooks:
+          - id: isort
