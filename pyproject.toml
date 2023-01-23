@@ -10,7 +10,7 @@ version = "0.1.0"
 appdirs = "^1.4.4"
 benbucks-core = {git = "https://github.com/bsoyka/benbucks-core"}
 python = "^3.11"
-rich-click = "^1.6.0"
+rich-click = "^1.6.1"
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.12.0"
